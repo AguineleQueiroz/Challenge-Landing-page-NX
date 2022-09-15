@@ -1,0 +1,25 @@
+@import url("config.css");
+
+/* header styles */
+
+.nav-link {
+  font-weight: 600;
+}
+
+.btn-contact {
+  margin-top: 0.2rem;
+  font-size: 0.85rem;
+  color: var(--white);
+  background-color: var(--orange);
+  border-radius: 0.2rem;
+  width: 110px;
+}
+
+.btn-contact:hover {
+  background-color: var(--black)!important;
+  color: var(--white)!important;
+}
+
+.dropdown-menu{
+    border-radius: .2rem;   
+}

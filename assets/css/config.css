@@ -1,0 +1,52 @@
+
+/* import font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+/* configs standard */
+
+:root{
+    /* colors */
+    --orange: #FB8351;
+    --orange-light: #FFAD64;
+    --blue-light: #ADD4D3;
+    --green: #31A83F;
+    --black: #000000;
+    --gray: #DAE2B6;
+    --white: #FFFFFF;
+    --orange-hover: #db6533;
+
+    /* font */
+    --font-content: 'Open Sans', sans-serif;
+
+    /* header-height */
+    --header-height: 55px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: var(--font-content);
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* config layout standard */
+.container{
+    max-width: 1200px;
+}
+
+.content-container{
+    max-width: 1020px;
+}
