@@ -1,52 +1,63 @@
-
 /* import font */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0;800;1,400&display=swap");
 
 /* configs standard */
 
-:root{
-    /* colors */
-    --orange: #FB8351;
-    --orange-light: #FFAD64;
-    --blue-light: #ADD4D3;
-    --green: #31A83F;
-    --black: #000000;
-    --gray: #DAE2B6;
-    --white: #FFFFFF;
-    --orange-hover: #db6533;
+:root {
+  /* colors */
+  --orange: #fb8351;
+  --purple: #80558C;
+  /* --blue-light: #ADD4D3; */
+  --blue-light: #ebf7f7;
+  --green: #31a83f;
+  --black: #333237;
+  --gray: #dae2b6;
+  --white: #ffffff;
+  --orange-dark: #f57328;
 
-    /* font */
-    --font-content: 'Open Sans', sans-serif;
+  /* font */
+  --font-content: "Open Sans", sans-serif;
 
-    /* header-height */
-    --header-height: 55px;
+  /* header-height */
+  --header-height: 55px;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html, body{
-    height: 100%;
-    width: 100%;
-    font-family: var(--font-content);
+html {
+  min-width: 375px;
+  max-width: 1366px;
 }
 
-li{
-    list-style: none;
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: var(--font-content);
+  color: var(--black);
 }
 
-a{
-    text-decoration: none;
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* config layout standard */
-.container{
-    max-width: 1200px;
+
+.container {
+  padding: 0 1rem !important;
+  height: 100%;
 }
 
-.content-container{
-    max-width: 1020px;
+.section-dimensions {
+  width: 100%;
+  height: 100vh!important;
+  padding: 4rem 0;
 }
