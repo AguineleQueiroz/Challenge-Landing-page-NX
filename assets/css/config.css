@@ -6,31 +6,26 @@
 :root {
   /* colors */
   --orange: #fb8351;
-  --purple: #80558C;
-  /* --blue-light: #ADD4D3; */
+  --blue-marine: #554994;
   --blue-light: #ebf7f7;
   --green: #31a83f;
   --black: #333237;
-  --gray: #dae2b6;
+  --gray: #F6F6F6;
   --white: #ffffff;
   --orange-dark: #f57328;
+  --gray-light: #F9F9F9;
 
   /* font */
   --font-content: "Open Sans", sans-serif;
 
   /* header-height */
-  --header-height: 55px;
+  --header-height: 64px;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-html {
-  min-width: 375px;
-  max-width: 1366px;
 }
 
 html,
@@ -54,10 +49,11 @@ a {
 .container {
   padding: 0 1rem !important;
   height: 100%;
+  margin: 0 auto!important;
 }
 
 .section-dimensions {
   width: 100%;
-  height: 100vh!important;
+  min-height: calc(100vh - var(--header-height))!important;
   padding: 4rem 0;
 }

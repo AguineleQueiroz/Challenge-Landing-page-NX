@@ -2,17 +2,21 @@
 
 /* header styles ================================================== */
 
-.header__page{
-  background-color: var(--blue-light);
+.bg-gray-light {
+  background-color: var(--gray-light);
+}
+
+.header__page {
+  background-color: var(--gray-light);
 }
 
 .nav-link {
-  font-size: .965rem;
+  font-size: 0.965rem;
   font-weight: 500;
   color: var(--black);
 }
 
-.nav-link:hover{
+.nav-link:hover {
   color: var(--orange-dark);
 }
 
@@ -25,85 +29,139 @@
   width: 110px;
   height: 40px;
   border: 1px solid var(--orange-dark);
-  font-size: .8rem;
+  font-size: 0.8rem;
+  padding-top: 0.6rem;
 }
 
-.navbar-toggler:focus{
+.navbar-toggler:focus {
   box-shadow: none;
   border: 1px solid var(--orange);
 }
 
 .btn-contact:hover {
-  background-color: var(--purple)!important;
-  color: var(--white)!important;
+  background-color: var(--blue-marine) !important;
+  color: var(--white) !important;
 }
 
-.dropdown-menu{
-    border-radius: .2rem;   
+.dropdown-menu {
+  border-radius: 0.2rem;
 }
-
-.navbar-collapse{
-  margin-top: .5rem;
-}
-
 
 /* Hero styles ================================================== */
-.hero{
-  height: calc(100vh - 80px);
-  margin: 0 auto;
+
+.hero {
+  margin-top: var(--header-height) !important;
 }
 
-.title-hero{
+.hero-content {
+  min-height: calc(100vh - var(--header-height));
+}
+
+.title-hero {
   font-weight: 800;
 }
 
-.keywords{
+.keywords {
   background-image: url(../img/grifo.svg);
   background-repeat: no-repeat;
-  background-position: left bottom;
-  background-size: contain;
+  background-position: bottom bottom;
+  background-size: cover;
+  padding-bottom: 3.5rem;
 }
 
-.btn-cta-hero{
-  font-size: .85rem;
-  border-radius: .2rem;
-  padding: .8rem 4rem;
+.btn-cta-hero {
+  font-size: 0.85rem;
+  border-radius: 0.2rem;
+  padding: 0.8rem 4rem;
   background-color: var(--orange);
   color: var(--white);
 }
 
-.btn-cta-hero:hover{
-  background-color: var(--purple)!important;
-  color: var(--white)!important;
+.btn-cta-hero:hover {
+  background-color: var(--blue-marine) !important;
+  color: var(--white) !important;
 }
 
-.hero-content{
-  position: relative;
-  top: 80px;
-  z-index: 1000;
+@media only screen and (min-width: 768px) {
+  .hero-content {
+    height: calc(100vh - var(--header-height)) !important;
+  }
 }
 
-.bg-img-hero{
-  position: relative;
-  z-index: 200;
-  width: 100%;
-  height: 100%;
-  background-image: url(../img/hero-image.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right bottom;
+@media only screen and (min-width: 768px) {
+  .hero-content {
+    display: flex;
+    align-items: center;
+  }
+  .entrance__text {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+  }
 }
 
-.entrance-text{
-  position: absolute;
-  height: 100%;
-  z-index: 300;
+/* numbers impact section ==================================== */
+
+.cards__impacts {
+  display: flex;
 }
 
+.card {
+  background: none;
+  padding: 2rem 1rem;
+  width: auto;
+  height: max-content;
+  border: none;
+  border-radius: 0.2rem;
+}
 
+.numbers {
+  color: var(--orange-dark);
+  font-weight: 600;
+}
 
-.bg-box-hero{
-  width: 100%;
-  height: 150px;
-  background-color: var(--purple);
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .card:nth-child(2) {
+    margin: 0 20px !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .cards__impacts {
+    width: max-content;
+    margin: 0 auto;
+  }
+}
+
+/* what do we do section =========================================== */
+
+.cards__box {
+  display: flex;
+}
+
+.card__promocional {
+  background: none;
+  padding: 2rem 1rem;
+  height: max-content;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+.card__content {
+  padding: 0 2rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .card__content {
+    display: flex;
+    flex-direction: column !important;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .cards__box {
+    width: fit-content;
+    margin: 0 auto;
+  }
 }

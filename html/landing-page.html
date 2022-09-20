@@ -18,7 +18,7 @@
 
     <!-- header -->
     <header class="header__page fixed-top" id="header-page">
-        <nav class="navbar navbar-expand-lg border-bottom">
+        <nav class="navbar navbar-expand-lg border-bottom p-0">
             <div class="container">
                 <a class="navbar-brand" href="#"><img src="../assets/img/logo.svg" alt=""></a>
                 <!-- expandable menu button -->               
@@ -38,7 +38,7 @@
                         </li>
                         <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Quem somos</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Serviços</a></li>
-                        <li class="nav-item mt-2 mt-lg-0"><a class="nav-link btn btn-contact ms-lg-4" href="#">CONTATO</a></li>
+                        <li class="nav-item mt-2 mt-lg-0"><a class="nav-link btn btn-contact ms-lg-4 mt-0" href="#">CONTATO</a></li>
                     </ul>
                 </div>
             </div>
@@ -46,35 +46,99 @@
     </header>
 
     <!-- main -->
-    <main class="main-content">
-
+    <main class="main-content bg-gray-light">
         <!-- hero section -->
         <section class="hero" id="hero">
-            <div class="hero-content container">
-                <!-- text hero -->
-                <div class="entrance-text h-100 col-5 d-lg-flex align-items-lg-center pb-lg-5">
-                    <div class="content  pb-lg-5">
-                        <h1 class="title-hero display-5 text-uppercase">Sua solução de <span class="keywords">negócio</span></h1>
-                        <p class="persuasive-description text-muted fs-5">Somos uma empresa júnior com foco em desenvolver projetos web com visão de futuro</p>
-                        <div class="btn-hero  mt-5"><a class="btn btn-cta-hero text-uppercase fw-semibold" href="#">Saiba mais</a></div>
+            <div class="hero-content container">         
+                <div class="entrance__text  py-5">
+                    <div class="col-md-6 mb-md-5 pe-lg-5">
+                        <div class="content__text text-center text-md-start mb-5  mb-md-0">
+                            <h1 class="title-hero display-5 text-uppercase">Sua solução de <span class="keywords">negócio</span></h1>
+                            <p class="persuasive-description text-muted fs-5 pt-sm-4">Somos uma empresa júnior com foco em desenvolver projetos web com visão de futuro</p>
+                            <div class="btn-hero  mt-5"><a class="btn btn-cta-hero text-uppercase" href="#">Saiba mais</a></div>
+                        </div>
+                    </div>
+                    <div class="image__hero col-md-6 p-md-5 pe-md-0">
+                        <img class="img-hero img-fluid" src="../assets/img/image-hero-tech.svg" alt="Mulher negra sorrindo e segurando um tablet">
                     </div>
                 </div>
-                <div class="bg-img-hero"></div>
-                <div class="bg-box-hero row">
-                    <div class="col d-flex align-items-center justify-content-center"><span class="display-3 fw-bold">375</span></div>
-                    <div class="col d-flex align-items-center justify-content-center"><span class="display-3 fw-bold">375</span></div>
-                    <div class="col d-flex align-items-center justify-content-center"><span class="display-3 fw-bold">375</span></div>
+            </div>
+        </section>
+        
+        <!-- 'what do we do' section -->
+        <section class="section-dimensions whatDo__weDo bg-white d-flex align-items-center" id="oQueFazemos">
+            <div class="container">
+                <div class="title__section text-center">
+                    <h6 class="text-muted">O QUE NÓS FAZEMOS</h6>
+                    <h2 class="fw-bold px-lg-5 px-lg-5">A Melhor Empresa Júnior para Resolver os Problemas do Seu Negócio Online</h2>
+                </div>
+                <div class="cards__box flex-column justify-content-lg-between flex-md-column flex-lg-row justify-content-md-center py-5">
+                    <div class="col">
+                        <div class="card__promocional">
+                            <div class="card__content d-flex flex-column align-items-center">
+                                <div class="icons__impact mb-3"><img src="../assets/img/preco-icon.png" alt="ícone simbolizando ideias de projeto"></div>
+                                <h5 class="fw-bold">Melhor Preço</h5>
+                                <p class="text-muted text-center mb-0">Preço justo e acessível para o seu bolso.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card__promocional">
+                            <div class="card__content d-flex flex-column align-items-center">
+                                <div class="icons__impact mb-3"><img src="../assets/img/pj-exclusivo-icon.png" alt="ícone simbolizando ideias de projeto"></div>
+                                <h5 class="fw-bold">Projetos Exclusivos</h5>
+                                <p class="text-muted text-center mb-0">E-commerces, plataformas digitais, identidade visual e muito mais.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card__promocional">
+                            <div class="card__content d-flex flex-column align-items-center">
+                                <div class="icons__impact mb-3"><img src="../assets/img/equipe-icon.png" alt="ícone simbolizando ideias de projeto"></div>
+                                <h5 class="fw-bold">Equipe Qualificada</h5>
+                                <p class="text-muted text-center mb-0">Muito mais valor para o seu negócio.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </section>
+
+        <!-- impact business section -->
+        <section class="impact__business" id="impact-business">
+            <div class="container d-flex flex-column text-center">
+                <div class="cards__impacts justify-content-lg-between flex-column flex-md-row flex-lg-row justify-content-md-between py-5 w-100">
+                    <div class="card">
+                        <div class="d-flex flex-column flex-lg-row align-items-center">
+                            <div class="icons__impact"><img src="../assets/img/projetos-icon.png" alt="ícone simbolizando ideias de projeto"></div>
+                            <div class="d-flex flex-column text-lg-start">
+                                <span class="numbers me-2 fs-1 ps-lg-4">175+</span>
+                                <h6 class="description__numbers ps-lg-4 text-muted">Projetos Entregues</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="d-flex flex-column flex-lg-row align-items-center">
+                            <div class="icons__impact"><img src="../assets/img/parceiros-icon.png" alt="ícone simbolizando ideias de projeto"></div>
+                            <div class="d-flex flex-column text-lg-start">
+                                <span class="numbers me-2 fs-1 ps-lg-4">75+</span>
+                                <h6 class="description__numbers ps-lg-4 text-muted">Parceiros</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="d-flex flex-column flex-lg-row align-items-center">
+                            <div class="icons__impact"><img src="../assets/img/clientes-icon.png" alt="ícone simbolizando ideias de projeto"></div>
+                            <div class="d-flex flex-column text-lg-start">
+                                <span class="numbers me-2 fs-1 ps-lg-4">395+</span>
+                                <h6 class="description__numbers ps-lg-4 text-muted">Clientes Felizes</h6>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-
-
-
         </section>
-        <!-- impact business section -->
-
-        <!-- 'what do we do' section -->
-
+        
         <!-- about us section -->
 
         <!-- our services section -->
