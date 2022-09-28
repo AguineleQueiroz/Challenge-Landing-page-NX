@@ -22,7 +22,7 @@
   color: var(--white);
   background-color: var(--blue-marine);
   border-radius: 0;
-  width: 110px;
+  width: 140px;
   height: 40px;
   border: 1px solid var(--black);
   font-size: 0.8rem;
@@ -43,6 +43,9 @@
   border-radius: 0;
 }
 
+.dropdown-toggle::after{
+  display: none!important;
+} 
 /* Hero styles ================================================== */
 
 .hero {
@@ -178,4 +181,87 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px){
+}
+
+/* services section =================================================*/
+
+.slider__container__services{
+  max-width: 700px;
+  width: 100%;
+  border-left: 15px;
+}
+
+.card__services{
+  border: 1px solid var(--blue-marine);
+  padding: 2rem 1rem;
+}
+
+@media only screen and (min-width: 992px){
+  .content__service{
+    display: flex;
+  }
+
+  .services__section{
+    display: flex;
+    align-items: center;
+  }
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    content: ""!important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+.swiper-button-next{
+  background-image: url(../img/chevron-right.svg);
+} 
+.swiper-button-prev{
+  background-image: url(../img/chevron-left.svg);
+}
+
+.swiper-button-next, 
+.swiper-button-prev{
+  position: relative!important;
+  margin-top: 0;
+  width: 2rem;
+  height: 2rem;
+  color: var(--swiper-navigation-color,var(--swiper-theme-color))!important;
+}
+
+.swiper-button-active{
+  border: 1px solid var(--blue-marine)!important;
+}
+
+.btns-action-sliders{
+  display: flex;
+  justify-content: start;
+}
+
+@media only screen and (max-width: 992px){
+  .btns-action-sliders{
+    display: flex;
+    justify-content: end;
+    margin-bottom: 1rem;
+  }
+  .swiper-button-next, .swiper-rtl .swiper-button-prev{
+    right: 0!important;
+  }
+
+  .swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: 18px!important;
+  }
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev{
+  right: 18px;
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+  left: 0;
 }

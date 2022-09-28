@@ -13,6 +13,8 @@
   --white: #ffffff;
   --orange-dark: #f57328;
   --gray-light: #F9F9F9;
+  --swiper-navigation-color: var(--blue-marine);
+
 
   /* font */
   --font-content: 'Source Code Pro', monospace;

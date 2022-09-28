@@ -10,6 +10,9 @@
     <!-- bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
+
     <!-- custom css -->
     <link rel="stylesheet" href="../assets/css/custom.css">
 
@@ -29,15 +32,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end w-100 mt-4 mt-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Institucional</a>
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Institucional<img src="../assets/img/down-arrow.png" alt="seta para baixo"></a>
+
                             <!-- menu dropdown -->
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Membros</a></li>
                                 <li><a class="dropdown-item" href="#">Docentes Conselheiros</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Quem somos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="#about">Quem somos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Serviços</a></li>
                         <li class="nav-item mt-2 mt-lg-0"><a class="nav-link btn btn-contact ms-lg-4 mt-0" href="#">CONTATO</a></li>
                     </ul>
                 </div>
@@ -145,7 +149,7 @@
         <section class="about" id="about">
             <div class="container section-dimensions">
                 <div class="content-about py-5">
-                    <div class="content__text__box col text-center text-md-start pe-md-4 pt-md-5">
+                    <div class="content__text__box col text-center text-md-start pe-md-4 pt-md-5 py-5">
                         <div class="text__content">
                             <h6 class="text-muted">SOBRE NÓS</h6>
                             <h2 class="fw-bolder">Elaboramos Projetos Que Irão te Ajudar a se Destacar.</h2>
@@ -159,14 +163,108 @@
                         </div>
                         <div class="mt-5"><a class="btn btn-cta text-uppercase" href="#">Saiba mais</a></div>
                     </div>
-                    <div class="col img-about mt-4 p-md-0 ps-md-4 p-4 pe-lg-0 pt-lg-4">
-                        <img class="img-fluid" src="../assets/img/destaque-img.svg" alt="">
+                    <div class="col img-about p-md-0 ps-md-4 p-4 pe-lg-0 pt-lg-4">
+                        <img class="img-fluid" src="../assets/img/destaque-img.svg" alt="Pessoa destacada com roupas cinza, preto e gravata roxa, à frente de outras em cinza claro">
                     </div>
                 </div>
             </div>
         </section>
-        <!-- our services section -->
 
+        <!-- our services section -->
+        <section class="services" id="services">
+            <div class="container services__section section-dimensions">
+                <div class="content__service col py-5">
+                    <div class="col-lg-4 text-center text-lg-start">
+                        <h6 class="text-muted">SERVIÇOS</h6>
+                        <h2 class="fw-bolder">Nossos Serviços Incluem.</h2>
+                        <p class="text-muted mt-lg-3">
+                            Transformamos as suas ideias e desejos em um projeto únicos de acordo com as suas necessidades.
+                            Somos especialistas em resolver os seus problemas.
+                        </p>
+                        <div class="btns-action-sliders swiper position-relative mt-lg-2">
+                            <div class="swiper-button-prev border" id="swiperBtnPrev" onclick="f()"></div>
+                            <div class="swiper-button-next border ms-4 " id="swiperBtnNext"  onclick="f()"></div>
+                        </div>
+                    </div>
+                    <div class="slider__container__services swiper ms-lg-4" id="slider-container-cards">
+                        <div class="slider__cards_wrapper swiper-wrapper" id="slider-cards-wrapper">
+                            <div class="card-box card__services swiper-slide">
+                                <div class="img__service mb-4">
+                                    <img src="../assets/img/parceiros-icon.png" alt="">
+                                </div>
+                                <div class="content_service">
+                                    <h5 class="title__service">Desenvolvimento & Design</h5>
+                                    <p class="description__service text-muted">Desenvolvimento e design de websites.</p>
+                                    <div class="arrw__icon">
+                                        <img src="../assets/img/down-arrow.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-box card__services swiper-slide">
+                                <div class="img__service mb-4">
+                                    <img src="../assets/img/design-thinking.png" alt="">
+                                </div>
+                                <div class="content_service">
+                                    <h5 class="title__service">Identidade Visual</h5>
+                                    <p class="description__service text-muted">Desenvolvimento de identidade visual.</p>
+                                    <div class="arrw__icon">
+                                        <img src="../assets/img/down-arrow.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-box card__services swiper-slide">
+                                <div class="img__service mb-4">
+                                    <img src="../assets/img/marketing-digital.png" alt="">
+                                </div>
+                                <div class="content_service">
+                                    <h5 class="title__service">Marketing Digital</h5>
+                                    <p class="description__service text-muted">Desenvolvimento de marketing empresarial.</p>
+                                    <div class="arrw__icon">
+                                        <img src="../assets/img/down-arrow.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-box card__services swiper-slide">
+                                <div class="img__service mb-4">
+                                    <img src="../assets/img/parceiros-icon.png" alt="">
+                                </div>
+                                <div class="content_service">
+                                    <h5 class="title__service">Desenvolvimento & Design</h5>
+                                    <p class="description__service text-muted">Desenvolvimento e design de websites.</p>
+                                    <div class="arrw__icon">
+                                        <img src="../assets/img/down-arrow.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-box card__services swiper-slide">
+                                <div class="img__service mb-4">
+                                    <img src="../assets/img/design-thinking.png" alt="">
+                                </div>
+                                <div class="content_service">
+                                    <h5 class="title__service">Identidade Visual</h5>
+                                    <p class="description__service text-muted">Desenvolvimento de identidade visual.</p>
+                                    <div class="arrw__icon">
+                                        <img src="../assets/img/down-arrow.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-box card__services swiper-slide">
+                                <div class="img__service mb-4">
+                                    <img src="../assets/img/marketing-digital.png" alt="">
+                                </div>
+                                <div class="content_service">
+                                    <h5 class="title__service">Marketing Digital</h5>
+                                    <p class="description__service text-muted">Desenvolvimento de marketing empresarial.</p>
+                                    <div class="arrw__icon">
+                                        <img src="../assets/img/down-arrow.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- testimonials section -->
 
         <!-- contact section -->
@@ -177,5 +275,11 @@
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+    <!-- Swiper js -->
+    <script src="../assets/js/swiper-bundle.min.js"></script>
+
+    <!-- javascript -->
+    <script src="../assets/js/main.js"></script>
 </body>
 </html>
