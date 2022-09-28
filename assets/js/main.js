@@ -6,10 +6,6 @@ var swiper = new Swiper(".slider__container__services", {
     centeredSlides: false,
     loop: false,
     loopFillGroupWithBlank: true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -20,12 +16,39 @@ var swiper = new Swiper(".slider__container__services", {
 let nextBtn = document.getElementById('swiperBtnNext');
 let prevBtn = document.getElementById('swiperBtnPrev');
 
-nextBtn.onclick = function () {
+nextBtn.onclick = () => {
     prevBtn.classList.remove('swiper-button-active');
     nextBtn.classList.add('swiper-button-active');
 }
 
-prevBtn.onclick = function () {
+prevBtn.onclick = () => {
     nextBtn.classList.remove('swiper-button-active');
     prevBtn.classList.add('swiper-button-active');
+}
+
+var swiper_testimonials = new Swiper(".content__testimonials", {
+    slidesPerGroup: 1,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    centeredSlides: false,
+    loop: false,
+    loopFillGroupWithBlank: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+
+let nextTestimonialsBtn = document.getElementById('swiperBtnTestimonialsNext');
+let prevTestimonialsBtn = document.getElementById('swiperBtnTestimonialsPrev');
+
+
+nextTestimonialsBtn.onclick = () => {
+    prevTestimonialsBtn.classList.remove('swiper-button-active');
+    nextTestimonialsBtn.classList.add('swiper-button-active');
+}
+
+prevTestimonialsBtn.onclick = () => {
+    nextTestimonialsBtn.classList.remove('swiper-button-active');
+    prevTestimonialsBtn.classList.add('swiper-button-active');
 }

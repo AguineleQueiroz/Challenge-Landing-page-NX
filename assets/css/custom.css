@@ -180,15 +180,16 @@
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 992px){
-}
-
 /* services section =================================================*/
 
 .slider__container__services{
   max-width: 700px;
   width: 100%;
   border-left: 15px;
+}
+
+.card-box{
+  height: 19rem;
 }
 
 .card__services{
@@ -264,4 +265,51 @@
 
 .swiper-button-prev, .swiper-rtl .swiper-button-next {
   left: 0;
+}
+
+
+/* testimonials ===================================================== */
+
+.card__box{
+  position: relative;
+  height: 20rem;
+  background-color: var(--white);
+}
+
+.content__testimonials{
+  display: flex;
+  align-items: center;
+  height: 20rem;
+  bottom: 0;
+}
+
+.btns-action-sliders-testimonials{
+  position: absolute;
+  bottom: 3rem;
+  right: 2rem;
+}
+
+.btns-sliders{
+  margin-right: 0;
+} 
+
+.img__quote{
+  width: 45px;
+}
+
+.img__testimonials{
+  padding: 4rem;
+}
+
+.testimonials > div{
+  padding: 2rem 2rem!important;
+}
+
+@media only screen and (min-width:876px ) {
+  .layout__testimonials{
+    display: flex;
+    flex-direction: column;
+    align-content: end;
+    height: 100%;
+  }
 }
