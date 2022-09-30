@@ -1,6 +1,5 @@
 
 var swiper = new Swiper(".slider__container__services", {
-    slidesPerGroup: 2,
     slidesPerView: 2,
     spaceBetween: 20,
     centeredSlides: false,
@@ -27,7 +26,6 @@ prevBtn.onclick = () => {
 }
 
 var swiper_testimonials = new Swiper(".content__testimonials", {
-    slidesPerGroup: 1,
     slidesPerView: 1,
     spaceBetween: 20,
     centeredSlides: false,
