@@ -16,10 +16,10 @@ Este projeto foi pensando considerando a necessidade de uma empresa júnior da �
 * Bootstrap 5
 * JavaScript 
 
-## Status do Campeonato
+## Status
 
 ```
-Ainda em votação :sunglasses:
+Finalizado! :sunglasses:
 ```
 
 ## Autor
