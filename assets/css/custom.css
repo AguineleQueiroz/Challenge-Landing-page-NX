@@ -121,7 +121,6 @@
 }
 
 /* services section =================================================*/
-
 .slider__container__services{
   max-width: 700px;
   width: 100%;
@@ -272,6 +271,16 @@
 }
 
 /* media queries =================================== */
+
+@media only screen and (max-width: 478px){    
+  .title__service{
+    font-size: .9em!important;
+  }
+
+  .description__service{
+    font-size: .9em;
+  }
+}
 
 @media only screen and (min-width: 768px) {
   .hero-content {
