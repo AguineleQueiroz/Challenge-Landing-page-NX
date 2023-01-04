@@ -18,9 +18,7 @@ Este projeto foi pensando considerando a necessidade de uma empresa j√∫nior da √
 
 ## Status
 
-```
-Finalizado! :sunglasses:
-```
+[![Status Completo](https://img.shields.io/badge/STATUS-COMPLETO-green?style=for-the-badge)]()
 
 ## Autor
 ```
